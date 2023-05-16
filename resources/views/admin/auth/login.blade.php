@@ -40,7 +40,7 @@
 
                                     <form class="form-body" action="{{ route('login') }}" method="POST"enctype='multipart/form-data'>
                                         @csrf
-
+                                            <h2 class="text-center"> KeyapBazar.com.bd </h2>
                                         <div class="login-separater text-center mb-4"> <span>Login Admin Panel </span>
                                             <hr>
                                         </div>
