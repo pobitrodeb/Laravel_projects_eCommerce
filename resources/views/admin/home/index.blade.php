@@ -85,10 +85,15 @@
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
-                      <a class="dropdown-item" href="authentication-signup-with-header-footer.html">
+                      <a class="dropdown-item" href="">
                          <div class="d-flex align-items-center">
                            <div class=""><i class="bi bi-lock-fill"></i></div>
-                           <div class="ms-3"><span>Logout</span></div>
+                           <div class="ms-3">
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('logoutForm').submit()">Logout</a>
+                           </div>
+                           <form action="{{ route('logout') }}" method="POST" id="logoutForm">
+                            @csrf
+                          </form>
                          </div>
                        </a>
                     </li>
@@ -615,17 +620,17 @@
                 <div class="menu-title">Authentication</div>
               </a>
               <ul>
-                <li> <a href="authentication-signin.html" target="_blank"><i class="bi bi-circle"></i>Sign In</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Sign In</a>
                 </li>
-                <li> <a href="authentication-signup.html" target="_blank"><i class="bi bi-circle"></i>Sign Up</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Sign Up</a>
                 </li>
-                <li> <a href="authentication-signin-with-header-footer.html" target="_blank"><i class="bi bi-circle"></i>Sign In with Header & Footer</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Sign In with Header & Footer</a>
                 </li>
-                <li> <a href="authentication-signup-with-header-footer.html" target="_blank"><i class="bi bi-circle"></i>Sign Up with Header & Footer</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Sign Up with Header & Footer</a>
                 </li>
-                <li> <a href="authentication-forgot-password.html" target="_blank"><i class="bi bi-circle"></i>Forgot Password</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Forgot Password</a>
                 </li>
-                <li> <a href="authentication-reset-password.html" target="_blank"><i class="bi bi-circle"></i>Reset Password</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>Reset Password</a>
                 </li>
               </ul>
             </li>
@@ -650,7 +655,7 @@
                 <div class="menu-title">Errors</div>
               </a>
               <ul>
-                <li> <a href="pages-errors-404-error.html" target="_blank"><i class="bi bi-circle"></i>404 Error</a>
+                <li> <a href="" target="_blank"><i class="bi bi-circle"></i>404 Error</a>
                 </li>
                 <li> <a href="pages-errors-500-error.html" target="_blank"><i class="bi bi-circle"></i>500 Error</a>
                 </li>
